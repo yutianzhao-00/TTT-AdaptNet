@@ -1,6 +1,6 @@
 # Test-Time Model Adaptation for Image Reconstruction Using Self-supervised Adaptive Layers
 
-Pytorch implementation paper "Test-Time Model Adaptation for Image Reconstruction Using Self-supervised Adaptive Layers" (ECCV 2024)
+Pytorch implementation of paper "Test-Time Model Adaptation for Image Reconstruction Using Self-supervised Adaptive Layers" (ECCV 2024)
 
 
 ## Abstract
