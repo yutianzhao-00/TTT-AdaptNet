@@ -34,11 +34,11 @@ import matplotlib.pyplot as plt
 parser = argparse.ArgumentParser(description='MRI test.')
 parser.add_argument('--gpu', default=0, type=int, help='GPU id to use.')
 parser.add_argument('--ckp',
-                    default='/home/ytzhao/TTT/pth/2r_0.25_mri.pkl',
+                    default='/home/ytzhao/TTT/pth/2r_0.25_mri_noisy.pkl',
                     type=str, metavar='PATH',
                     help='path to checkpoint of a trained model')
-parser.add_argument('--mask_type', type=str, default='1s', help='mask type for the MRI sampling pattern')
-parser.add_argument('--ratio', type=float, default=0.33, help='sampling ratio for the MRI mask')
+parser.add_argument('--mask_type', type=str, default='2r', help='mask type for the MRI sampling pattern')
+parser.add_argument('--ratio', type=float, default=0.25, help='sampling ratio for the MRI mask')
 parser.add_argument('--model-name', default='Unrolling', type=str, help="name of the trained model (dafault: 'EI')")
 parser.add_argument('--layer_num', type=int, default=12, help='phase number of ISTA-Net-plus')
 parser.add_argument('--image_dir', default='Image_noisy/admmnet', type=str, metavar='PATH',
