@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 parser = argparse.ArgumentParser(description='MRI test.')
 parser.add_argument('--gpu', default=0, type=int, help='GPU id to use.')
 parser.add_argument('--ckp',
-                    default='/home/ytzhao/TTT/model_mri_noisy_final/1s_0.33_mri.pkl',
+                    default='/home/ytzhao/TTT/pth/2r_0.25_mri.pkl',
                     type=str, metavar='PATH',
                     help='path to checkpoint of a trained model')
 parser.add_argument('--mask_type', type=str, default='1s', help='mask type for the MRI sampling pattern')
