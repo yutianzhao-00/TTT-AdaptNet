@@ -39,7 +39,7 @@ parser.add_argument('--mask_type', type=str, default='2r', help='mask type for t
 parser.add_argument('--ratio', type=float, default=0.25, help='sampling ratio for the MRI mask')
 parser.add_argument('--gpu_list', type=str, default='0', help='gpu index')
 parser.add_argument('--optimizer', default='Adam', type=str, help='Currently only support SGD, Adam and Adamw')
-parser.add_argument('--model_dir', type=str, default='models', help='trained or pre-trained model directory')
+parser.add_argument('--model_dir', type=str, default='pth', help='trained or pre-trained model directory')
 ## add the momentum to the SGD optimizer
 ## about the parameters of my optimizers
 parser.add_argument('--momentum', default=0.9, type=float, help='momentum of SGD')
