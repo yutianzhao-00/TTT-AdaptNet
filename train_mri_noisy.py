@@ -14,8 +14,6 @@ import types
 import cv2
 import math
 from models.unrolling import ISTANetplus
-from models.unrolling_mid import ISTANetplus_Mid
-from C2R import *
 from utils import get_Optimizer
 from scipy.io import savemat
 import glob
@@ -24,7 +22,6 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = True
 import numpy as np
 from dataset.mridb import MRIData
-from engine import evaluate
 import time
 from physics.mri import FFT_Mask_ForBack
 
@@ -87,7 +84,6 @@ print(Noise_name)
 N = sio.loadmat('%s' % ( Noise_name))
 Noise = N['N']
 print(Noise.shape)
-
 
 
 ## define the psnr function
@@ -184,19 +180,10 @@ for epoch_i in range(args.start_epoch, args.end_epoch):
                    "./%s/net_params_%d.pkl" % (model_dir, epoch_i))  # save only the parameters
 
 
-
 #### save the best checkpoint
 torch.save(best_checkpoint,
                    os.path.join(model_dir, 'best.pth'))  # save only the parameters
 
-if best_checkpoint is not None:
-    print('The best epoch is ', best_checkpoint['epoch'])
-    print("Results ----------")
-    print("PSNR: {:.4}".format(best_status['PSNR']))
-    print("SSIM: {:.4}".format(best_status['SSIM']))
-    print("------------------")
-else:
-    print('No checkpoint has been saved')
 
 total_time = time.time() - start_time
 total_time_str = str(datetime.timedelta(seconds=int(total_time)))
