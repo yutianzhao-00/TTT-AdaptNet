@@ -28,11 +28,6 @@ RTX3090 Python==3.8.0 Pytorch==1.8.0+cu101 scipy==1.7.3
 author = {Zhao, Yutian and Zhang, Tianjing and Ji, Hui},
 title = {Test-Time Model Adaptation for Image Reconstruction Using Self-supervised Adaptive Layers},
 year = {2024},
-isbn = {978-3-031-72912-6},
-publisher = {Springer-Verlag},
-address = {Berlin, Heidelberg},
-url = {https://doi.org/10.1007/978-3-031-72913-3_7},
-doi = {10.1007/978-3-031-72913-3_7},
 }
 ```
 
