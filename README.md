@@ -2,9 +2,8 @@
 
 [Test-time model adaption for image reconstruction using self-supervised adaptive layers](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05391.pdf)
 
-Yutian Zhao,Tianjing Zhang and Hui Ji
-National University of Singapore
-ECCV 2024
+Yutian Zhao,Tianjing Zhang and Hui Ji, National University of Singapore
+(ECCV 2024)
 
 ## Content
 * [Background](#Background)
