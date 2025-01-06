@@ -11,7 +11,7 @@ Yutian Zhao,Tianjing Zhang and Hui Ji, National University of Singapore
 * [Requirements](#Requirements)
 * [Reference](#Reference)
 
-## Overview
+## Background
 Image reconstruction from incomplete measurements is a basic task in medical imaging. While supervised deep learning proves to be a powerful tool for image reconstruction, it demands a substantial number of latent images for training. To extend the application of deep learning to medical imaging where collecting latent images poses challenges, this paper introduces an self-supervised test-time adaptation approach. The proposed approach leverages a pre-trained model on an external dataset and efficiently adapts it to each test sample for optimal generalization performance. Model adaption for an unrolling network is done with additional lightweight adaptive linear layers, enabling efficient alignment of testing samples with the distribution targeted in the pre-trained model. This approach is inspired by the connection between linear convolutional layer and Wiener filtering. Extensive experiments showed significant performance gain of the proposed method over other unsupervised methods and model adaptation techniques in two medical imaging tasks.
 ![image](https://github.com/XinranQin/DualDomainSS/blob/main/images/CS.png)
 
